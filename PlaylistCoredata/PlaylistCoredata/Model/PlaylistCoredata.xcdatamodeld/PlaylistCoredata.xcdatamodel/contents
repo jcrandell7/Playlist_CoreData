@@ -5,8 +5,8 @@
         <relationship name="songs" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Song" inverseName="playlist" inverseEntity="Song"/>
     </entity>
     <entity name="Song" representedClassName="Song" syncable="YES" codeGenerationType="class">
-        <attribute name="artist"/>
-        <attribute name="title"/>
+        <attribute name="artist" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
         <relationship name="playlist" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Playlist" inverseName="songs" inverseEntity="Playlist"/>
     </entity>
     <elements>
